@@ -1,26 +1,36 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container">
+    <img alt="Vue logo" src="./assets/contact-us.png">
+    <h2>Call: 1-800-000-00001</h2>
+    <h2>Email: module-federation@js.com</h2>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+
+
+.container{
+  height:100%;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
 }
+
+img {
+  width: auto;
+  height: 200px;
+}
+
 </style>
