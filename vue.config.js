@@ -12,7 +12,7 @@ module.exports = {
                 exposes: {
                     './VueMfeComponent': {
                         import: './src/main.js',
-                        name: `vue-remote-app`
+                        name: `src_components_ContactUs`
                     }
                 },
                 shared: ['vue', 'core-js']
