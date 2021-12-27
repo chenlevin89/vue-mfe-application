@@ -6,11 +6,11 @@ module.exports = {
     configureWebpack: {
         plugins: [
             new ModuleFederationPlugin({
-                name: "vueRemoteApp",
-                library: {type: "var", name: "vueRemoteApp"},
+                name: "vueRemote",
+                library: {type: "var", name: "vueRemote"},
                 filename: "remoteEntry.js",
                 exposes: {
-                    './VueMfeComponent': {
+                    './ContactUs': {
                         import: './src/main.js',
                         name: `src_components_ContactUs`
                     }
