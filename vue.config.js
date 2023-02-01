@@ -10,9 +10,9 @@ module.exports = {
                 library: {type: "var", name: "vueRemote"},
                 filename: "remoteEntry.js",
                 exposes: {
-                    './ContactUs': {
-                        import: './src/main.js',
-                        name: `src_components_ContactUs`
+                    './CreateApp': {
+                        import: './src/createApp.js',
+                        name: `src_components_CreateApp`
                     }
                 },
                 shared: ['vue', 'core-js']
